@@ -13,7 +13,7 @@ const Login = () => {
   return (
     <section className="max-w-[1440px] sm:w-[90%]  font-Poppins lg:w-9/12 mx-auto">
       <section className="grid grid-cols-1 gap-10  min-h-screen  items-center md:grid-cols-2 lg:gap-24">
-        <div className="order-2 bg-[url('https://i.ibb.co/X2G3HbH/i-Phone-14-15-Pro-Max-6.png')] bg-cover bg-center sm:bg-none">
+        <div className="order-2 md:order-1 bg-[url('https://i.ibb.co/X2G3HbH/i-Phone-14-15-Pro-Max-6.png')] bg-cover bg-center sm:bg-none">
           <div className="py-10 sm:py-0">
           <h1 className="text-[#156BCA] text-center sm:text-left text-4xl font-normal font-Gupter">
             LOGO
@@ -108,7 +108,7 @@ const Login = () => {
           </form>
           </div>
         </div>
-        <div className="mt-10 hidden sm:block lg:mt-0">
+        <div className="mt-10 order-1  hidden sm:block lg:mt-0">
         <Swiper
         spaceBetween={30}
         pagination={{
