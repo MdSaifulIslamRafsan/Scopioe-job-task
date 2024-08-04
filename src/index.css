@@ -2,3 +2,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.active{
+    background: #D4E9FF;
+    width: 100%;
+    display: block;
+}
