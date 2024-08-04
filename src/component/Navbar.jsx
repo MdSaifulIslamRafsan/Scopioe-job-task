@@ -3,6 +3,7 @@ import { CiHeart, CiLogin, CiSettings } from "react-icons/ci";
 import { MdOutlineLiveHelp } from "react-icons/md";
 import { Link, NavLink } from "react-router-dom";
 import useAuth from "../Hook/useAuth";
+import { IoNotifications } from "react-icons/io5";
 
 
 const Navbar = () => {
@@ -17,7 +18,7 @@ const Navbar = () => {
         </Link>
         <div className="hidden lg:flex gap-3">
             <div className="">
-            <img className="w-14" src={user?.photoURL ? user?.photoURL : 'https://i.ibb.co/51MhwJ3/Group-12867.png' } alt="" />
+            <img className="w-14 rounded-full" src={user?.photoURL ? user?.photoURL : 'https://i.ibb.co/51MhwJ3/Group-12867.png' } alt="" />
                    
             </div>
             <div className="">
@@ -30,6 +31,7 @@ const Navbar = () => {
          
         </div>
         <div className="navbar-end">
+         <span className="lg:border-2 lg:p-2 lg:rounded-full  lg:mr-4"><IoNotifications></IoNotifications> </span>
         <div className="dropdown dropdown-end">
             <div
               tabIndex={0}
@@ -54,13 +56,13 @@ const Navbar = () => {
             
            <ul
               tabIndex={0}
-              className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+              className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-60 p-2 shadow"
             >
                 <div className=" flex gap-2 justify-end items-end pr-5 pb-5 flex-col h-48 bg-[#156BCA]">
                  
-                    <img className="w-14" src={user?.photoURL ? user?.photoURL : 'https://i.ibb.co/51MhwJ3/Group-12867.png' } alt="" />
-                    <h4 className="text-white text-xl font-semibold">{user?.displayName}</h4>
-                    <p>{user?.email}</p>
+                    <img className="w-14 rounded-full" src={user?.photoURL ? user?.photoURL : 'https://i.ibb.co/51MhwJ3/Group-12867.png' } alt="" />
+                    <h4 className="text-white text-sm sm:text-base lg:text-xl font-semibold">{user?.displayName}</h4>
+                    <p className="text-[10px]">{user?.email}</p>
                 </div>
           <li className="py-2">
             <NavLink className="p-2" to={"/"}>

@@ -14,8 +14,8 @@ const Banner = () => {
         <div className="lg:w-1/2 my-10 lg:my-0 flex justify-center lg:justify-end bg-[url('https://i.ibb.co/hLn1QmP/Vector-1.png')] bg-cover bg-center">
             <img src="https://i.ibb.co/bb5XrqM/Group-1000001700.png" alt="" />
         </div>
-        <div className="lg:hidden border rounded-xl p-1 flex">
-            <input type="text" placeholder="ZIP code or city name" className="outline-none flex-1 px-4" />
+        <div className="lg:hidden  border rounded-xl p-1 flex">
+            <input type="text" placeholder="ZIP code or city name" className="outline-none w-full flex-1 px-2 sm:px-4" />
             <button className="btn  btn-primary">GO</button>
             </div>
     </div>

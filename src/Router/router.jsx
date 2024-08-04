@@ -3,6 +3,7 @@ import Login from "./../pages/Login";
 import Root  from "../Layout/Root";
 import SignUp from "../pages/SignUp";
 import Home from "../pages/Home";
+import PrivateRoute from "./PrivateRoute";
 
 
 const router = createBrowserRouter([
@@ -12,31 +13,31 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/",
-        element: <Home></Home>,
+        element: <PrivateRoute><Home></Home></PrivateRoute>,
       },
       {
         path: "/NewListing",
-        element: <Home></Home>,
+        element:<PrivateRoute><Home></Home></PrivateRoute>,
       },
       {
         path: "/Search",
-        element: <Home></Home>,
+        element: <PrivateRoute><Home></Home></PrivateRoute>,
       },
       {
         path: "/About",
-        element: <Home></Home>,
+        element: <PrivateRoute><Home></Home></PrivateRoute>,
       },
       {
         path: "/Favorites",
-        element: <Home></Home>,
+        element: <PrivateRoute><Home></Home></PrivateRoute>,
       },
       {
         path: "/HelpCenter",
-        element: <Home></Home>,
+        element: <PrivateRoute><Home></Home></PrivateRoute>,
       },
       {
         path: "/Settings",
-        element: <Home></Home>,
+        element: <PrivateRoute><Home></Home></PrivateRoute>,
       },
     ],
   },

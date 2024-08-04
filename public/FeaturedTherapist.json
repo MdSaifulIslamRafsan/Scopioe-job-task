@@ -1,0 +1,43 @@
+[
+    {
+      "name": "Alexander Cort",
+      "address": "123 Elm Street, New York",
+      "location": "Mobile & In-Studio",
+      "image": "https://example.com/image1.jpg"
+     
+    },
+    {
+      "name": "Michael Smith",
+      "address": "789 Maple Drive, NY",
+      "location": "Mobile & In-Studio",
+      "image": "https://example.com/image2.jpg"
+      
+    },
+    {
+      "name": "David Martinez",
+      "address": "Pine Street, San Fran",
+      "location": "Mobile & In-Studio",
+      "image": "https://example.com/image3.jpg"
+     
+    },
+    {
+      "name": "Jennifer Lee",
+      "address": "567 Cedar Lane, Miami",
+      "location": "Mobile & In-Studio",
+      "image": "https://example.com/image4.jpg"
+    },
+    {
+      "name": "John Doe",
+      "address": "456 Oak Avenue, Los Angeles",
+      "location": "Mobile & In-Studio",
+      "image": "https://example.com/image5.jpg"
+     
+    },
+    {
+      "name": "Jane Smith",
+      "address": "987 Birch Boulevard, San Francisco",
+      "location": "Mobile & In-Studio",
+      "image": "https://example.com/image6.jpg"
+    }
+  ]
+  
