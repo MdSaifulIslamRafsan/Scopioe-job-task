@@ -1,4 +1,4 @@
-import { createUserWithEmailAndPassword, FacebookAuthProvider, GoogleAuthProvider, onAuthStateChanged, signInWithEmailAndPassword, signInWithPopup } from "firebase/auth";
+import { createUserWithEmailAndPassword, FacebookAuthProvider, GoogleAuthProvider, onAuthStateChanged, signInWithEmailAndPassword, signInWithPopup, signOut } from "firebase/auth";
 import { createContext, useEffect, useState } from "react";
 import Swal from 'sweetalert2'
 import auth from "../firebase/firebase.config";
@@ -56,6 +56,23 @@ const AuthProvider = ({children}) => {
       const handleLoginAccount = (email , password) => {
         return signInWithEmailAndPassword(auth, email, password);
     }
+    const handleLogout = () =>{
+      signOut(auth)
+      .then(()=>{
+          Swal.fire({
+              title: "Good job!",
+              text: "You've been successfully logged out",
+              icon: "success",
+            });
+      })
+      .catch((error)=>{
+          Swal.fire({
+            icon: "error",
+            title: "Oops...",
+            text: error?.message,
+          });
+      })
+  }
 
       useEffect(()=>{
         const unSubscribe = onAuthStateChanged(auth, (currentUser) => {
@@ -66,7 +83,7 @@ const AuthProvider = ({children}) => {
             unSubscribe();
           };
     },[]);
-    const userInfo ={user,loader,handleGoogleLogin , handleFacebookLogin , createAccount , handleLoginAccount}
+    const userInfo ={user,loader,handleGoogleLogin , handleFacebookLogin , createAccount , handleLoginAccount , handleLogout}
     return (
         <AuthContext.Provider value={userInfo}>
             {children}
