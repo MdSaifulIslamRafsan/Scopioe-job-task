@@ -72,7 +72,7 @@ const Therapist = ({ searchTerm }) => {
                                     </p>
                                     <p className='text-sm'>{therapist.location}</p>
                                 </div>
-                                <Link to={`/`} className="bg-[#D4E9FF] w-full block py-2 text-center rounded-b-lg">
+                                <Link to={`/`} className="bg-[#D4E9FF] hover:bg-[#156BCA] hover:text-white underline w-full block py-2 text-center rounded-b-lg">
                                     See Details
                                 </Link>
                             </div>
