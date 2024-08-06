@@ -62,7 +62,7 @@ const Root = () => {
           </li>
         </ul>
       </aside>
-      <div className="w-full">
+      <div className="w-[84%]">
         <Navbar></Navbar>
         <Outlet></Outlet>
       </div>

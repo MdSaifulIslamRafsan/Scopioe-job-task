@@ -8,3 +8,19 @@
     width: 100%;
     display: block;
 }
+
+.swiper-button-prev:after, .swiper-button-next:after{
+    font-size: 16px !important;
+  background: #156BCA;
+    padding: 10px 14px ;
+    border-radius: 50%;
+    color: white;
+
+}
+.swiper-button-disabled{
+    background: #D4E9FF ;
+    font-size: 16px !important;
+    padding: 10px 14px ;
+    border-radius: 50%;
+    color: white;
+}

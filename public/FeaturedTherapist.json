@@ -3,41 +3,41 @@
       "name": "Alexander Cort",
       "address": "123 Elm Street, New York",
       "location": "Mobile & In-Studio",
-      "image": "https://example.com/image1.jpg"
+      "image": "https://i.ibb.co/ZdR85kz/image-118.png"
      
     },
     {
       "name": "Michael Smith",
       "address": "789 Maple Drive, NY",
       "location": "Mobile & In-Studio",
-      "image": "https://example.com/image2.jpg"
+      "image": "https://i.ibb.co/f0mnv6y/image-119.png"
       
     },
     {
       "name": "David Martinez",
       "address": "Pine Street, San Fran",
       "location": "Mobile & In-Studio",
-      "image": "https://example.com/image3.jpg"
+      "image": "https://i.ibb.co/q7k9vt5/image-120.png"
      
     },
     {
       "name": "Jennifer Lee",
       "address": "567 Cedar Lane, Miami",
       "location": "Mobile & In-Studio",
-      "image": "https://example.com/image4.jpg"
+      "image": "https://i.ibb.co/F4M0Jcz/image-121.png"
     },
     {
       "name": "John Doe",
-      "address": "456 Oak Avenue, Los Angeles",
+      "address": "456 Oak Avenue",
       "location": "Mobile & In-Studio",
-      "image": "https://example.com/image5.jpg"
+      "image": "https://i.ibb.co/ZdR85kz/image-118.png"
      
     },
     {
       "name": "Jane Smith",
-      "address": "987 Birch Boulevard, San Francisco",
+      "address": "987 Birch Boulevard",
       "location": "Mobile & In-Studio",
-      "image": "https://example.com/image6.jpg"
+      "image": "https://i.ibb.co/Q8j0ttm/image-117.png"
     }
   ]
   
